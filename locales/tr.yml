@@ -1,0 +1,1076 @@
+#Main
+send-help: |
+  Merhaba! Benim adım *{}*. @qkoer tarafindan yazilan bir yonetim botuyum bir sorunuz varsa @qkoer e pm atabilirsiniz\n
+  *Helpful commands:*
+  - /start: Botun çalıştığını kontrol etmek için havalı bir komut
+  - /help: sana bu mesajı gönderir.
+  - /help <modül adı>: sana belirtlilen modül hakkında mesaj gönderir.
+  - /lang: Botun dilini değiştir
+cmd_multitrigger: "\n\nTüm komutlar : `/` veya `!` ile kullanılabilir"
+here_is_help: Işte *{}* modülü için biraz yardım:\n\n{}
+help_not_found: Help string for <code>{}</code> not found!
+help_pm_only: Komutları PM de görebilirsin.
+btn_help: '❔ Yardım'
+btn_go_back: Geri
+main_start_group: Hey Millet! Ben yaşıyorum :3
+
+main_start_pm: |
+  Hey sen! benim adım *{}* ben bir grup yönetim botuyum 
+  beni nasıl kullanacağını öğrenmek için aşagidaki tuşlara bas.
+  \nBeni grubuna eklemek isterse [Buraya Tıkla!](t.me/rulman_bot?startgroup=true)
+
+main_start_btn_ctrlpnl: '🛠 Kontrol Paneli'
+main_start_btn_lang: 'Dil ayarla'
+#Common
+common_err_no_admin: Sen bir admin değilsin!
+common_err_no_user: Bir kullanıcıya atıfta bulunmuyorsunuz.
+common_err_invalid_chatid: Hatalı chat ID!
+common_yes: "Evet"
+common_no: "Hayır"
+common_cmd_group_only: Bu komut sadece grup içersinde kullanılabilir.
+common_cmd_pm_only: Bu komut sadece PM de kullanılabilir.
+common_group_creator_only: Bu komutu sadece grup kurucusu kullanabilir!
+common_this_chat: Bu sohbet
+common_invalid_arg: Invalid argument! Please type `on`/`yes` or `off`/`no`!
+#Admins
+modname_admin: Admin
+admin_err_no_perm: Onu yönetici yapamam yada yöneticilikten atamam bunun için önce beni admin yapmalısın.
+admin_err_user_admin: Zaten admin olan birini nasıl admin yapabilirm?
+admin_err_self_promote: Kendimi admin yapamam :D (sanırım bu bir şaka).
+admin_promote_success: Yönetici {} Başarı ile yetkilendirildi {} in <b>{}</b>!
+admin_err_demote_creator: Bu kişi Grubun KURUCUSU, onun yetkilerini alamam!
+admin_err_demote_noadmin: Yetkilendirilmemiş birinin yetkilerini alamam!
+admin_err_self_demote: Kendi yetkilerimi alamam!
+admin_demote_success: Admin {} has successfully demoted {} in <b>{}</b>!
+admin_err_cant_demote: Yetkisini Alamam. Yönetici olmayabilirim veya başka yönetici tarafından yetki verilmiş olabilir, bu yüzden yetkisini alamiyorum!
+admin_list: "Admins in *{}*:"
+admin_err_no_perm_invitelink: Davet bağlantısına erişimim yok, izinlerimi değiştirmeyi deneyin!
+admin_err_chat_no_invitelink: Maalesef, yalnızca üst gruplar ve kanallar için davet bağlantıları verebilirim!
+admin_disable_reaction: Kullanıcı tarafından tetiklenen yönetici komutlarına yanıt devre dışı bırakıldı.
+admin_enable_reaction: Kullanıcı tarafından tetiklenen yönetici komutlarına yanıt etkinleştirildi.
+admin_err_wrong_arg: Lütfen Doğru veya Yanlış girin!
+admin_reaction_status: Kullanıcı tarafından tetiklenen yönetici komutlarına yanıt şu anda *{}*!
+admin_help: |
+  /adminlist | /admins: chat\n Grubundaki adminleri etiketler.
+  *Admin only:*
+  - /pin: Yanıtlanan iletiyi sessizce sabitler. Kullanıcılara bildirim göndermek için 'sesli', 'bildir' veya 'şiddetli' ekleyin.
+  - /unpin: Şu anda sabitlenmiş olan mesajı sabitler
+  - /invitelink: Grubun davet bağlantısını verir.
+  - /promote: Bir kullanıcıya yetki verir. Kullanıcıya yanıt verin veya kullanıcı adını kullanın.
+  - /demote: Bir kullanıcının yetkisini alır. Kullanıcıya yanıt verin veya kullanıcı adını kullanın.
+#AFK
+modname_afk: AFK
+user_now_afk: "{} Şu anda meşgül!"
+user_no_longer_afk: "{} Artık meşgül değil!"
+status_afk_noreason: "{} Şuanda meşgül!"
+status_afk_reason: "{} meşgül çünkü:\n{}"
+afk_help: |
+  - /afk <reason>: Kendinizi AFK olarak işaretleyin.
+  - brb <reason>: Afk komutuyla aynı, ancak bir command.\n degil.
+  AFK olarak işaretlendiğinde, söz konusu tüm sorulara müsait olmadığınızı belirten bir mesaj gönderilir!
+#Android
+modname_android: Android
+download: "**Download:** [{}]({})\n"
+build_size: "**Build Size:** `{}`\n"
+build_date: "**Build Date:** `{}`\n"
+version: "**Version:** `{}`\n"
+android_version: "**Android Version:** `{}`\n"
+rom_type: "**ROM Type:** `{}`\n"
+maintainer: "**Maintainer:** {}\n"
+xda_thread: "**XDA Thread:** [Here]({})\n"
+changelog: "**Device Changelog:** `{}`\n"
+weekly: "**Weekly**\n"
+phh_releases: "**Phh's latest GSI release(s)**\n"
+err_not_found: Sorgunuzla eşleşen sonuç bulunamadı.
+err_api: API'ya erişilemedi.
+err_example_device: Neden örnek cihazı almaya çalışıyorsunuz?
+err_json: Rom bakıcısına OTA json'larını düzeltmelerini söyleyin. Eminim bu OTA ile çalışmaz ve bu bot ile de çalışmaz: P
+btn_dl: İndirmek için tıklayın.
+cmd_example: Lütfen cihazınızı yazın **codename**!\nFor example, `/{} tissot`
+android_help: |
+  *Device Specific ROM for a device*
+  - /evo <device>: Bir cihaz için en yeni Evolution X ROM'u edinin
+  - /los <device>: Bir cihaz için en yeni LineageOS ROM'u edinini
+  - /bootleggers <device>: En yeni Bootleggers ROM'u edinin device\n
+  *GSI*
+  - /phh: En son Phh AOSP GSI alın!
+  *Misc*
+  - /magisk: En son Magisk sürümlerini alın.
+#Antiflood
+modname_antiflood: Antiflood
+flood_mute: Taşkınları doğal afetlere bırakmak istiyorum. Ama sen, sen sadece bir hayal kırıklığıydın. *Muted*!
+flood_err_no_perm: Burada insanları susturamıyorum, önce bana izin ver! O zamana kadar, sel baskınını devre dışı bırakacağım.
+flood_logger_success: '<b>{}:</b>\n#MUTED\n<b>User:</b> {}\nFlooded the group.'
+flood_logger_fail: '<b>{}:</b>\n#INFO\nNo izinleri yoksay! Antiflood disabled'
+flood_logger_set_off: '<b>{}:</b>\n#SETFLOOD\n<b>Admin:</b> {}\nDisabled antiflood.'
+flood_logger_set_on: '<b>{}:</b>\n#SETFLOOD\n<b>Admin:</b> {}\nSet antiflood to <code>{}</code>.'
+flood_set: Antiflood güncellendi ve {} olarak ayarlandı
+flood_set_off: Antiflood devre dışı.
+flood_status_off: Şu anda flood kontrolünü zorlamıyorum!
+flood_status_on: Şu anda kullanıcıları yoksayıyorum. {} arka arkaya birden fazla mesaj gönderirlerse.
+flood_err_num: Antiflood 0 (devre dışı) veya 3'ten büyük bir sayı (etkin) olmalıdır!
+flood_err_args: Tanınmayan argüman - lütfen bir sayı, 'off' veya 'no' kullanın.
+antiflood_help: |
+ İnsanların bazen nasıl katıldığını, 100 mesaj gönderdiğini ve sohbetinizi mahvettiğini biliyor musunuz? Antiflood ile, bu artık olmaz! \ N
+  Antiflood, arka arkaya ** x ** 'den fazla mesaj gönderen kullanıcılar üzerinde işlem yapmanıza izin verir. \ N
+  Available commands are:
+  - /flood: geçerli antiflood ayarlarını alır.
+  - /setflood <number/off>: kullanıcı üzerinde işlem yapılacak mesaj sayısını belirler.
+#Antispam
+modname_antispam: Antispam
+antispam_err_usr_sudo: Küçük gözlerimle casusluk yapıyorum ... sudo kullanıcı savaşı! Neden birbirinizi açıyorsunuz?
+antispam_err_usr_support: OOOH, birisi bir destek kullanıcısını gban etmeye çalışıyor! * patlamış mısır yakalar *
+antispam_err_usr_bot: '-_- Çok komik, kendimi mahvetmeme izin ver, neden yapmıyorum? İyi deneme.'
+antispam_err_not_usr: Bu bir kullanıcı değil!
+antispam_err_usr_deleted: Bu silinmiş bir hesap! Onları neden rahatsız ediyorsun?
+antispam_err_no_new_reason: Bu kullanıcı zaten yasaklanmış; Sebebini değiştirirdim, ama bana bir tane vermedin ...
+antispam_logger_update_gban: |
+  <b>New Reason of Global Ban</b>
+  <b>Sudo Admin:</b> {}
+  <b>User:</b> {}
+  <b>ID:</b> <code>{}</code>
+  <b>Previous Reason:</b> {}
+  <b>New Reason:</b> {}
+antispam_reason_updated: "Bu kullanıcı zaten gbanned. Nedenini güncelledim.\nPrevious reason: <code>{}</code>\nNew reason: <code>{}</code>"
+antispam_new_gban: |
+  <b>Initializing Global Ban</b>
+  <b>User:</b> {}
+  <b>ID:</b> <code>{}</code>
+  <b>Reason:</b> {}
+antispam_logger_new_gban: |
+  <b>Global Ban</b>
+  <b>Sudo Admin:</b> {}
+  <b>User:</b> {} 
+  <b>ID:</b> <code>{}</code>
+  <b>Reason:</b> {}
+antispam_no_reason: Sebep yok
+antispam_user_not_gbanned: Bu kullanıcı gbanned değil!
+antispam_ungbanned: I Küresel olarak {} ikinci bir şans vereceğim.
+antispam_logger_ungban: |
+  <b>Global Ban Removal</b>
+  <b>Sudo Admin:</b> {}
+  <b>User:</b> {}
+  <b>ID:</b> <code>{}</code>
+  <b>Reason:</b> {}
+antispam_err_ungban: "{} Nedeniyle engellenemedi”
+antispam_checkban_user_removed: "* Bu kullanıcı bağlı ve kaldırıldı. * \ NReason:` {} `"
+antispam_on: Bu grupta antispam güvenliğini etkinleştirdim. Bu sizi spam gönderenlerden, hoş olmayan karakterlerden ve en büyük trollerden korumaya yardımcı olacaktır.
+antispam_off: Bu grupta antispam güvenliğini devre dışı bıraktım. GBans artık kullanıcılarınızı etkilemeyecek. Yine de herhangi bir trol ve spam göndericisinden daha az korunacaksınız!
+antispam_err_wrong_arg: "Bir ayar seçmem için bana bazı argümanlar verin! On / off, yes / no! \ n \ nGeçerli ayarınız: {} \ nDoğru olduğunda, grubunuzda gerçekleşen herhangi bir gbans da gerçekleşir. Yanlış olduğunda, sizi spam gönderenlerin merhametine bırakmazlar. "
+antispam_userinfo_gbanned: "Global yedi<b>{}</b>"
+antispam_userinfo_gban_reason: "\nReason: {}"
+antispam_chatsettings_gban: "Bu sohbet * gbans * 'ı zorunlu kılıyor: `{}`."
+anitspam_appeal: \n<b>Appeal at:</b> @tgbotAyaGroup
+antispam_spamwatch_banned: "<b> Bu kullanıcı SpamWatch tarafından spambot olarak tespit edildi ve cezasi kesildi! </b>\n\n<b>Reason</b>: {}"
+antispam_help: |
+ Antispam bot sahipleri tarafından spam göndericileri tüm gruplarda yasaklamak için kullanılır. Bu, spam taşkınlarını olabildiğince çabuk kaldırarak sizi ve gruplarınızı korumaya yardımcı olur. Bu varsayılan olarak etkindir, ancak komutu kullanarak bunu değiştirebilirsiniz. \ N
+  *Admin only:*
+  - /antispam <on/off/yes/no>: Gruptaki antispam güvenlik ayarlarını değiştirin veya geçerli ayarlarınızı döndürün (bağımsız değişken olmadığında).
+#Bans
+modname_bans: Bans
+bans_err_usr_not_found: Ya yalnis ban attin yada atamadin cunku boyle biri yok..
+bans_err_usr_is_bot: Kendimi Neden Banliyayim?
+bans_err_usr_is_admin: Aptal neden bir admini banliyayim?.
+bans_logger: |
+  <b>{}:</b>
+  #BANNED
+  <b>Admin:</b> {}
+  <b>User:</b> {} (<code>{}</code>)
+bans_banned_success: Admin {} has successfully banned {} in <b>{}</b>!
+bans_logger_reason: \n<b>Reason:</b> {}
+bans_err_unknown: "Unknown error: {} failed."
+bans_err_tban_no_arg: Bana sure ver SURE!
+bans_tban_logger: '<b>{}:</b>\n#TEMP_BANNED\n<b>Admin:</b> {}\n<b>User:</b> {} (<code>{}</code>)\n<b>Time:</b> {}'
+bans_tbanned_success: Admin {}  {} Kisisini banladi (BAN YEDİN GERİZEKALİ) in <b>{}</b> for {}!
+bans_kick_is_bot: Kendimi neden atiyim?
+bans_kick_is_admin: Aptal neden bir yonetici atiyim?
+bans_kick_success: Admin {} {} kullanicisini gruptan kovdu in <b>{}</b>!
+bans_kick_logger: '<b>{}:</b>\n#KICKED\n<b>Admin:</b> {}\n<b>User:</b> {} (<code>{}</code>)'
+bans_kickme_success: Sorun değil, seni kovuyorum.
+bans_kickme_failed: Uzgunum seni kovamam iyi eglenceler...
+bans_unban_user_in_chat: Neden zaten sohbette olan birinin yasağını kaldırmaya çalışıyorsunuz?
+bans_unban_success: Kullanicinin bani kalkti.
+bans_unban_logger: '<b>{}:</b>\n#UNBANNED\n<b>Admin:</b> {}\n<b>User:</b> {} (<code>{}</code>)'
+bans_sban_logger: '<b>{}:</b>\n#UNBANNED\n<b>Admin:</b> {}\n<b>User:</b> {} (<code>{}</code>)'
+bans_help: |
+  Bazi o. cocuklarinin ban yemesi lazim...
+  Bu modülde nasıl ban atılacağını gostericem\ N
+  Available commands are:
+  - /ban: Kullaniciyi Sobetten Banlar
+  - /banme: Grupta kendine ban atarsin.
+  - /tban: Kullaniyo sureli olarak banlar suresi bitince ban açılır <d/h/m> (d:gun, h:saat or m:dakika)
+  - /unban: Kullanicinin banini açar
+  - /sban: Sohbette bir kullanıcıyı sessizce yasaklar.
+  - /mute: Kullaniciyi susturur
+  - /tmute: Kullaniciyi süreli olarak susturur. <d/h/m> (d:gun, :saat or m:dakika)
+  - /unmute: Kullanicinin Sesini Açar
+  - /kick: Kullaniciyi Kovar
+  - /kickme: Kendini odadan atarsin.\n
+     Banme ve kickme (argüman gerektirmeyen) hariç tüm komutlar tanıtıcı veya yanıtla çalışır. \n
+  Birini geçici olarak sessize alma örneği:
+  /tmute @kullaniciadi 2h; bu kisi 2 saat boyunca yazamaz.
+#Blacklist
+modname_blacklist: Blacklists
+blacklist_active_list: Suanki kara listede olan kelimeler; {}:\n
+blacklist_no_list: içinde kara liste filtresi yok <b>{}</b>!
+blacklist_add: <b> {} </b> 'deki kara listeye <code> {} </code> eklendi!
+blacklist_del: <b> {} </b> 'daki kara listeden <code> {} </code> kaldırıldı!
+blacklist_multi_del: <b> {} </b> içindeki <code> {} </code> kara listeden kaldırıldı!
+blacklist_err_add_no_args: kara listeye {} yazmak istediğiniz kelimeleri söyleyin.
+blacklist_err_del_no_args: Kara listeden hangi kelimeleri kaldırmak istediğini söyle.
+blacklist_err_not_trigger: kara listede boyle bir kelime yok
+blacklist_err_multidel_no_trigger:
+blacklist_err_multidel_some_no_trigger: Removed <code>{}</code> triggers from the blacklist in <b>{}</b>! {} did not exist, so were not removed.
+blacklist_chatsettings_word_count: There are {} blacklisted words.
+blacklist_hel
+  You can set blacklist filters to take automatic action on people when they say certain things. This is done using:\n
+  - /addblacklist <blacklist trigger> <blacklist reason>: blacklists the trigger. You can set sentences by putting quotes around the reason.
+  - /unblacklist <blacklist trigger>: stop blacklisting a certain blacklist trigger.
+  - /rmblacklist <blacklist trigger>: same as /unblacklist
+  - /blacklist: list all active blacklist filters
+  - /geturl: View the current blacklisted urls
+  - /addurl <urls>: Add a domain to the blacklist. The bot will automatically parse the url.
+  - /delurl <urls>: Remove urls from the blacklist.\n
+  Example:
+  /addblacklist "the admins suck" Respect your admins!
+  This would delete any message containing 'the admins suck'.\n
+  /addurl bit.ly
+  This would delete any message containing url "bit.ly".
+#Filters
+modname_cust_filters: Filters
+cust_filters_list: "* {} İçindeki filtreler listesi: * \ n"
+cust_filters_local: local filters
+cust_filters_err_btn_only: Filtre yanıt metni eksik. SADECE düğmeleriniz olamaz, onunla gitmek için bir mesaja ihtiyacınız var!
+cust_filters_err_empty: Ne ile cevap vereceğinizi belirtmediniz!
+cust_filters_add_success: '{}' İşleyicisi * {} * içine eklendi!
+cust_filters_list_empty: {} İçinde etkin filtre yok!
+cust_filters_stop_success: {} Filtresi silinmistir...
+cust_filters_err_wrong_filter: Bu aktif bir filtre değildir - tüm aktif filtreler için çalıştır / filtreler.
+cust_filters_err_protocol: Desteklenmeyen bir URL protokolü kullanmaya çalışıyor gibi görünüyorsunuz. Telegram, tg: // gibi bazı protokoller için düğmeleri desteklemez. Lütfen tekrar deneyin veya @qKoeR 'tan yardım isteyin.
+cust_filters_err_badformat: Bu filtre yanlış biçimlendirildiği için gönderilemedi. Neden olduğunu anlayamıyorsanız @qkoer a sorun!
+cust_filters_chatsettings_stats: Burada `{}` özel filtre var.
+cust_filters_cleanup_success: "{} bu sohbetten filtreler kaldırıldı. "
+cust_filters_help: |
+  Filtrelerle sohbetinizi daha canlı hale getirin; Bot belirli kelimelere cevap verecektir!
+  Filtreler büyük / küçük harfe duyarlı değildir; birisi tetik kelimelerinizi her söylediğinde {} başka bir şeyi yanıtlar! istenirse kendi komutlarınızı oluşturmak için kullanılabilir.
+  - / filters: bu sohbetteki tüm etkin filtreleri listele.
+  * Yalnızca yönetici: *
+  - / filter <anahtar kelime> <yanıt iletisi>: Birisi "kelime" dediğinde, bot "cümle" ile yanıt verir. Birden çok kelime filtresi için ilk kelimeyi alıntılayın.
+  - / stopall: Tüm filtreleri durdurun, bunun için sohbet sahibi olmalıdır. Bunu yalnızca ne yaptığınızı bildiğinizde kullanın.
+  - / stop <filtre anahtar kelimesi>: bu filtreyi durdurur. \ n
+  Bir filtrenin nasıl ayarlanacağına bir örnek şöyledir:
+  `/ filtre merhaba Merhaba! Nasılsın?
+  Çok kelimeli bir filtre şu yollarla ayarlanabilir:
+  "/ filtre" merhaba arkadaşım "Merhaba! Uzun zamandır görüşemedik! ''
+  Bir görüntü, gif veya çıkartma veya başka bir veri kaydetmek istiyorsanız, aşağıdakileri yapın:
+  bir etikete veya istediğiniz verilere yanıt verirken "/ filter kelime". Şimdi, birisi "kelime" den her bahsettiğinde, bu etiket bir yanıt olarak gönderilir.
+  Şimdi, "merhaba" diyen herkese "Merhaba, nasılsın?" Yazicak.
+#Disable
+modname_disable: Disabling
+disable_success: `{}` Kullanımını devre dışı bıraktı
+disable_err_undisableable: Bu komut devre dışı bırakılamaz
+ctiv_err_no_cmd: Bir komutu bağımsız değişken olarak iletir.
+enable_enable_success: `{}` kullanımını etkinleştirdi
+enable_already_enabled: Bu komut zaten etkin.
+enable_able_commands: Aşağıdaki komutlar arasında geçiş yapılabilir: \ n {}
+enable_able_commands_none: Hiçbir komut devre dışı bırakılamaz.
+disabled_chatsettings_none_disabled: Hiçbir komut devre dışı bırakılmadı!
+ctiv_chatsettings_list_disabled: Yönetici olmayanlar için şu komutlar şu anda devre dışı: \ n {}
+disable_help: |
+  Herkes botun sunduğu her özelliği istemez. Spam ve kötüye kullanımı önlemek için bazı komutlar kullanılmadan bırakıldığında en iyisidir. \ N
+  Bu, yaygın olarak kullanılan bazı komutları devre dışı bırakmanıza olanak tanır, böylece yönetici olmayanlar bunları kullanamaz.
+  Ayrıca, insanları bluetexting'ten durdurarak onları otomatik olarak silmenize de izin verir. \ N
+  - / cmds: devre dışı bırakılmış komutların geçerli durumunu kontrol et \ n
+  * Yalnızca yönetici: *
+  - / enable <cmd name>: Bir komutu etkinleştirir
+  - / dissable <cmd adı>: Bir komutu devre dışı bırakır
+#Feds
+modname_feds: Federations
+ feds_create_fail: Federasyon oluşturulamadı! @Qkoer'dan yardım isteyin.
+feds_create_success: "* Başarıyla yeni bir federasyon oluşturdunuz! * \ nAd:` {} `\ nID:` {} `\ n \ nFederasyona eklemek için aşağıdaki komutu gruplar halinde çalıştırın: \ n` / joinfed {} `"
+feds_create_success_logger: "<pre> {} </pre>" kimliğiyle "Federasyon <b> {} </b> oluşturuldu"
+feds_err_no_args: Lütfen federasyonun adını yazın.
+feds_delete_not_found: Bu federasyon bulunamadı!
+feds_owner_only: Bunu yalnızca federasyon sahipleri yapabilir!
+feds_fedadmin_only: Bunu sadece federasyon yöneticileri yapabilir!
+feds_delete_confirm: Federasyonunuzu silmek istediğinizden emin misiniz? Bu işlem iptal edilemez, tüm yasak listenizi kaybedersiniz ve <code> {} </code> federasyonu kalıcı olarak kaybedilir!
+feds_group_not_in_fed: Bu grup herhangi bir federasyonda değil!
+feds_group_part_of_fed: "Bu sohbet aşağıdaki federasyonun bir parçası:"
+feds_group_joined_fed: Ah, Bir sohbette iki federasyona katılacak mısınız?
+feds_fedid_invalid: Lütfen geçerli bir Federasyon Kimliği girin.
+feds_join_unknown_err: Bilinmeyen bir hata nedeniyle federasyona katılamadı, @qkoer dan yardım isteyin.
+feds_join_success: Sohbet federasyona katıldı!
+feds_leave_success: "Bu sohbet federasyondan ayrıldı: {}!"
+feds_leave_not_joined: Hiç katılmadığınız bir federasyondan nasıl ayrılabilirsiniz ?!
+feds_promote_owner: Federasyon sahibini neden tanıtmaya çalışıyorsunuz?
+feds_promote_bot: Ben zaten tüm federasyonlarda federasyon yöneticisiyim!
+feds_promote_success: Başarıyla terfi etti!
+feds_promote_failed: Tanıtım yapılamadı!
+feds_demote_bot: Kendimi bir federasyondan indiremiyorum!
+feds_demote_target_not_admin: Federasyon yöneticisi olmayan insanları indiremem!
+feds_demote_success: Defol buradan!
+feds_demote_failed: Demoting failed!
+feds_info: |
+  <b>ℹ️ Federation Information:</b>
+  FedID: <code>{}</code>
+  Name: {}
+  Creator: {}
+  All Admins: <code>{}</code>
+  Total banned users: <code>{}</code>
+  Number of groups in this federation: <code>{}</code>
+feds_admins: |
+  <b>Admins in federation '{}':<b>
+feds_help: |
+  Ah, grup yönetimi. İstenmeyen posta gönderenler grubunuza girmeye başlayana ve onu engellemeniz gerekene kadar her şey eğlencelidir. O zaman daha fazla ve daha fazla yasaklamaya başlamanız gerekiyor ve acıyor.
+  Ama sonra birçok grubunuz var ve bu spam göndericinin gruplarınızdan birinde olmasını istemiyorsunuz - bununla nasıl başa çıkabilirsiniz? Tüm gruplarınızda manuel olarak engellemeniz mi gerekiyor?
+
+  Artık! Federasyon ile, diğer tüm sohbetlerle tek bir sohbet çakışmasını yasaklayabilirsiniz.
+  Yönetici federasyonları bile belirleyebilirsiniz, böylece güvenilir yöneticiniz korumak istediğiniz tüm sohbetleri yasaklayabilir.
+
+  Yine de bir Federasyon oluşturmak için deney aşaması sadece yapımcım tarafından yapılabilir
+
+  Komut:
+  - / newfed <fedname>: verilen adla yeni bir Federasyon oluşturun. Kullanıcıların yalnızca bir Federasyona sahip olmasına izin verilir. Bu yöntem aynı zamanda Federasyonu yeniden adlandırmak için de kullanılabilir. (en fazla 64 karakter)
+  - / delfed: Federasyonunuzu ve bununla ilgili bilgileri silin. Engellenen kullanıcıları iptal etmez.
+  - / fedinfo <FedID>: belirtilen Federasyon hakkında bilgi.
+  - / joinfed <FedID>: Federasyondaki mevcut sohbete katıl. Bunu yalnızca sohbet sahipleri yapabilir. Her sohbet yalnızca bir Federasyonda olabilir.
+  - / leavefed <FedID>: verilen Federasyonu terk eder. Bunu yalnızca sohbet sahipleri yapabilir.
+  - / fpromote <user>: Kullanıcıları beslenen yöneticiye vermelerini teşvik eder. Yalnızca beslenen sahip.
+  - / fdemote <kullanıcı>: Kullanıcıyı yönetici Federasyonundan normal bir Kullanıcıya bırakır. Yalnızca beslenen sahip.
+  - / fban <user>: bu sohbetin gerçekleştiği tüm federasyonlardan kullanıcıları yasaklayın ve yöneticilerin kontrolü elinde bulundurun.
+  - / unfban <user>: Kullanıcıyı bu sohbetin gerçekleştiği ve yürütücünün kontrol ettiği tüm federasyonlardan iptal edin.
+  - / setfrules: Federasyon kurallarını düzenler.
+  - / frules: Bkz. Federasyon yönetmelikleri.
+  - / chatfed: Geçerli sohbetteki Federasyona bakın.
+  - / fedadmins: Federasyon yöneticisini göster.
+  - / fbanlist: Şu anda Federasyonda mağdur olan tüm kullanıcıları görüntüler.
+  - / fedchats: Federasyona bağlı olan tüm sohbetleri alın.
+  - / importfbans: Yasaklı listeyi şimdi Federasyona aktarmak için Federasyon yedek mesaj dosyasını yanıtlayın.
+#TODO: Devam edecek
+#Tuş takımı
+keyboard_disconnect: Sohbet bağlantısını kes
+keyboard_connect: Bir sohbete bağlan
+keyboard_updated: Klavye Güncellendi
+keyboard_bothelp: Bot Yardımı
+keyboard_notes: Notlar
+#Language
+language_switch_success: {} için dil tercihi {} olarak güncellendi
+language_switch_success_pm: Dil tercihiniz {} olarak güncellendi
+language_not_supported: "{} henüz desteklenmiyor!"
+language_code_not_valid: Bu geçerli bir dil kodu değil. Uluslararası kabul görmüş bir ISO kodu kullanın!
+language_current_locale: "Bu sohbet için geçerli yerel ayar: * {} *"
+language_select_language: "* Dili seçin * \ n"
+language_user_language: %100luk dil pakedi eklenmiştir iyi günler :)
+language_chat_language: "\ nBağlı sohbet dili:` {} `"
+language_sel_user_lang: "* \ n \ nYeni bir kullanıcı dili seçin: *"
+#Locks
+modname_locks: Locks
+locks_list_title: "Locks: "
+locks_lock_success: Tüm yönetici olmayanlar için `{}` ileti kilitlendi!
+locks_unlock_success: Herkes için kilitsiz `{}` mesaj!
+locks_type_invalid: Neyi kilitlemeye çalışıyorsun ...? Kilitlenebilirlerin listesi için deneyin / locktypes.
+locks_bot_not_admin: Grup yöneticisi olduğumdan ve iletileri silme iznim olduğundan emin olun, ardından tekrar deneyin.
+locks_lock_no_type: Kilitlemek için bir tür belirtmediniz.
+lokcs_unlock_no_type: Kilidi açılacak bir tür belirtmediniz.
+locks_lock_bots_no_admin: Bir bot görüyorum ve onlara katılmalarını durdurmam söylendi ... ama yönetici değilim!
+locks_lock_bots_kick: Bu sohbete yalnızca yöneticilerin bot eklemesine izin verilir! Tekmeledi!
+locks_list_empty: * {} * içinde geçerli kilit yok.
+locks_list: |
+  Bunlar * {} * içindeki kilitlerdir:
+   - sticker = `{}`
+   - audio = `{}`
+   - voice = `{}`
+   - document = `{}`
+   - video = `{}`
+   - videonote = `{}`
+   - contact = `{}`
+   - photo = `{}`
+   - gif = `{}`
+   - url = `{}`
+   - bots = `{}`
+   - forward = `{}`
+   - game = `{}`
+   - location = `{}`
+   - messages = `{}`
+   - media = `{}`
+   - other = `{}`
+   - all = `{}`
+locks_help: |
+  Çıkartmalar sizi rahatsız ediyor mu? veya insanların bağlantı paylaşmasını önlemek mi istiyorsunuz? veya resimler? Doğru yerdesiniz! \ N
+  Kilitler modülü, telgraf dünyasında bazı ortak öğeleri kilitlemenizi sağlar; bot onları otomatik olarak silecek! \ n
+  Kullanılabilir komutlar:
+  - / lock <öğe (ler)>: "öğe" kullanımını kilitler. Şimdi, sadece yöneticiler bu türü kullanabilecektir!
+  - / unlock <item (s)>: "item" kilidini açın. Herkes onları tekrar kullanabilir.
+  - / locks: sohbetin kilit durumunu listeler.
+  - / locktypes: kilitlenebilecek her şeyin bir listesini alır. (şuna bir göz atın!) \ n
+  örneğin: kilit etiketleri:
+  / lock sticker
+#Log channel
+modname_log_channel: Log Channel
+log_channel_link: \n<b>Link:</b> <a href=\"http://telegram.me/{}/{}\">click here</a>
+log_channel_deleted: Bu günlük kanalı silindi - ayar kaldırıldı.
+log_channel_err_format: \ n \ n beklenmedik bir hata nedeniyle biçimlendirme devre dışı bırakıldı.
+log_channel_grp_curr_conf: "Bu grupta tüm günlükleri şu adrese gönderildi: {} (` {} `)"
+log_channel_none: Bu grup için günlük kanalı ayarlanmadı!
+log_channel_fwd_cmd: Şimdi / setlog komutunu bu kanalı bağlamak istediğiniz gruba iletin!
+log_channel_chn_curr_conf: Bu kanal {} için günlük kanalı olarak ayarlandı.
+log_channel_link_success: Günlük kanalını başarıyla ayarlayın!
+log_channel_invalid_message: Bu iletilen bir mesaj değil! Bu komut hakkında daha fazla bilgi için lütfen yardımı okuyun (bot ile bir PM'ye / help yazın).
+log_channel_unlink_success: Kanalın bağlantısı {}!
+log_channel_unlink_none: Henüz bir günlük kanalı ayarlanmadı!
+log_channel_help: |
+  *Admin only:*
+ - / logchannel: günlük kanalı bilgilerini al
+  - / setlog: günlük kanalını ayarlamanızı sağlar.
+  - / unsetlog: günlük kanalının ayarını kaldırın. \ n
+  Günlük kanalının ayarlanması:
+  - botu istenen kanala ekleme (yönetici olarak!)
+  - kanalda gönderme / setlog
+  - / setlog'u gruba iletme
+#Memes and etc.
+modname_memes: Memes
+memes_no_message: Bana yazicagim metni soyle
+memes_deepfry_nothing: Bununla ne yapmam gerekiyor ?!
+memes_shout_notext: Yazi nerde?
+memes_not_doing_that: Kes bunu yapmicam.
+memes_runs_list:
+  - "Hey! Nereye gidiyorsun?"
+  - "Ha? Ne? kaçtılar mı?"
+  - "ZZzzZZzz... Noldu? oh, yine onlarmış, boşver."
+  - "Geri gel!"
+  - "Not so fast..."
+  - "Duvara dikkat et!"
+  - "Beni onlarla sakın yalnız bırakma!!"
+  - "Kaçarsan, ölürsün."
+  - "Şakacı seni, Ben heryerdeyim."
+  - "Bunu yaptığına pişman olacaksın..."
+  - "/kickme tuşunuda deneyebilirsin, Eğlenceli olduğunu söylüyorlar."
+  - "Git başka birini rahatsız et, burda kimse takmıyor."
+  - "Kaçabilirsin ama saklanamazsın."
+  - "Yapabildiklerin bunlar mı?"
+  - "Arkandayım..."
+  - "Misafirlerin var!"
+  - "Bunu kolay yoldan yapabiliriz, yada zor yoldan."
+  - "Anlamıyorsun, değil mi?"
+  - "Haha, kaçsan iyi edersin.!"
+  - "Lütfen, hatırlat bana ne kadar aldırıyorum?"
+  - "Senin yerinde olsam daha hızlı kaçardım."
+  - "Bu kesinlikle aradığımız robot."
+  - "Belki şans sana güler."
+  - "Ünlü son sözler."
+  - "Ve sonsuza dek yok oldular, hiç görünmediler."
+  - "\"Hey, bana bakın! Bottan kaçabiliyorum çok havalıyım!\" - bu kişi"
+  - "Evet evet, /kickme tuşuna şimdiden bas."
+  - "İşte, bu yüzüğü alın ve Mordor'a gidin."
+  - "Efsaneye göre onlar hala çalışıyor..."
+  - "Harry Potter'ın aksine, ebeveynlerin seni benden koruyamaz."
+  - "Korku öfkeye, öfke nefrete, nefret acıya yol açar. Korku içinde kaçmaya devam edersen,"
+  - "bir sonraki Vader sen olabilirsin."
+  - "Birden fazla hesaplama yapıldıktan sonra, dalaverelerine olan ilgimin tam olarak 0 olduğuna karar verdim."
+  - "Efsaneye göre onlar hala çalışıyor."
+  - "Devam et, seni burda istediğimize emin değilim."
+  - "Sen bir sihirb- Oh. Bekle. Sen Harry değilsin, devam et."
+  - "KORİDORDA KOŞMAYIN!"
+  - "Görüşürüz bebeğim."
+  - "Kim köpekleri saldı?"
+  - "Komik çünkü kimse takmıyor."
+  - "Ah, ne büyük kayıp. Bu seferkini sevmiştim."
+  - "Açıkcası canım, umrumda değil."
+  - "Sütüm tüm erkekleri avluya çekiyor... Daha hızlı koş!"
+  - "Gerçeği KALDIRAMAZSIN!"
+  - "Uzun zaman önce, çok çok uzaktaki bir galakside birileri takabilirdi. Ama artık değil."
+  - "Hey, onlara bak! Kaçınılmaz banhammer'dan kaçıyorlar... Ne kadarda tatlı."
+  - "Han önce vuruldu. Ben de öyle yapacağım"
+  - "Beyaz tavşanın, arkasında ne yapıyorsun?"
+  - "Doktorunda söyleyeceği gibi... KAÇ!"
+
+memes_insults_list:
+  - "Ohhhh ... Ne kadarda gerizekalı."
+  - "Bir yandan içip bir yandan yazma."
+  - "Bence eve gitmelisin ya da zihnini tatile çıkarmalısın."
+  - "Komut bulunamadı. Tıpkı beynin gibi."
+  - "Kendini salak durumuna düşürdüğünün farkındamısın? Görünüşe göre değilsin."
+  - "Bundan daha iyi şeyler yazabilirsin."
+  - "544. bot kurali kesit 9 senin gibi gerizekalı birine cevap vermemi yasaklıyor.."
+  - "Üzgünüm, beyin satmıyoruz."
+  - "İnan bana sen normal değilsin."
+  - "Görünüşe göre beynin kendini yeni hissediyor, kullanmadığını görüyorum."
+  - "Eğer intihar etmek isteseydim ilk önce egona tırmanır sonra zeka seviyene atlardım."
+  - "Zombiler beyin yer... sen ise güvendesin."
+  - "Sen maymunlarden evrimleşmedin, onlar senden evrimleşti."
+  - "Zeka seviyen yaşını geçtiği zaman gel ve benle konuş."
+  - "Sana gerizekalı demiyorum, diyorum ki düşünmeye başlayınca şansın kötü gidiyor."
+  - "Hangi dili konuşuyorsun? Kulağa saçmalık gibi geliyor."
+  - "Gerizekalılık bir suç değil, gidebilirsin."
+  - "Evrimin geriye doğru gidebiliceğinin kanıtısın."
+  - "Kaç yaşında olduğunu sorardım ama biliyorum ki o kadar fazla sayamazsın."
+  - "Bir yabancı olarak, insan ırkı hakkında ne düşünüyorsunuz ?"
+  - "Beyin herşey değil. Senin durumunda hiçbirşeyler."
+  - "Normalde insanlar yaşar ve öğrenir. Sen sadece yaşıyorsun."
+  - "Seni gerizekalı yapan ne bilmiyorum ama işe yarıyor."
+  - "Konuşmaya devam et, birgün zekice birşey söyleyeceksin! (Şüphelerim var ama)"
+  - "Şaşırt beni, zekice birşey söyle."
+  - "Zeka seviyen ayakkabu numarandan daha düşük."
+  - "Eğer dünyada senle ikimiz kalsaydık ve ben kız olsaydım insanlığı yok ederdim."
+  - "Sen çıldırdın mı gerizekalı ?"
+  - "Herkes gerizekalı olabilir ama sen çok ileri gidiyorsun."
+  - "Sana gerizekalı diyerek incittiğim için özür dilerim. Zaten bildiğini sanıyordum.."
+  - "Siyanürün tadına bakmalısın."
+  - "Senin enzimlerin fare zehirini sindirmek için var."
+  - "Sonsuza dek uyumayı denemelisin."
+  - "Bir silah al ve kendini vur."
+  - "Uçaktan paraşütsüz atlama rekorunu kırmalısın."
+memes_slaps_templates_list:
+  - "{user1} {user2} kullanıcısını {item} ile {hits} ."
+  - "{user1} {user2} kullanıcısını {item} ile yüzüne {hits} ."
+  - "{user1} {user2} kullanıcısını {item} ile biraz {hits} ."
+  - "{user1} {user2} kullanıcısına {item} {throws} ."
+  - "{user1} {user2} kullanıcısını {item} ile yüzüne {throws} ."
+  - "{user1} {user2} kullanıcısına doğru {item} fırlatıyor."
+  - "{user1} {user2} aptalına {item} ile tokat atıyor."
+  - "{user1} {user2} kullanıcısını yere sabitleyıp ardı ardına {item} ile {hits} ."
+  - "{user1} {item} alarak {user2} {hits}."
+  - "{user1} {user2} kullanıcısını sandalyeye bağlayıp {item} {throws} ."
+  - "{user1} {user2} kullanıcısını arkadaşca ittirerek lavda yüzmeyi öğrenmesini sağlıyor."
+
+memes_items_list:
+  - "demir tencere"
+  - "büyük alabalık"
+  - "beyzbol sopası"
+  - "kriket sopası"
+  - "tahta baston"
+  - "çivi"
+  - "yazıcı"
+  - "kürek"
+  - "tüplü monitör"
+  - "fizik defteri"
+  - "tost makinası"
+  - "Richard Stallman'ın portresi"
+  - "televizyon"
+  - "beş ton kamyon"
+  - "koli bandı"
+  - "kitap"
+  - "dizüstü bilgisayar"
+  - "eski televizyon"
+  - "kayalı çuval"
+  - "gökkuşağı alabalığı"
+  - "plastik tavuk"
+  - "çivili sopa"
+  - "yangın söndürücü"
+  - "ağır taş"
+  - "kir yığını"
+  - "arı kovanı"
+  - "çürük et parçası"
+  - "ayı"
+  - "tonlarca tuğla"
+memes_throw_list:
+  - "atıyor"
+  - "fırlatıyor"
+  - "savuruyor"
+  - "yağdırıyor"
+memes_hit_list:
+  - "vuruyor"
+  - "sert vuruyor"
+  - "tokatlıyor"
+  - "yumrukluyor"
+  - "geçiriyor"
+memes_help: |
+  Bazı meme komutları, hepsini kendin bul!
+
+  - / owo: OWO de metin
+  - / stretch: STRETCH de text
+  - / vapor: owo vapor dis
+  - / hitler: Bir mesaj verin ve hitler'in altyazısını oluşturmak için bu komutu yazın
+  - / mock: / hitler ile aynı şeyi yapar ama onun yerine spongemock
+  - / kim: / hitler ile aynı şeyi yapıyor ama onun yerine Kim Jong Un ile (Ey evim bombalamıyor)
+  - / pidor: 4pda memes
+  - / shout: Yapmasını istediğiniz her şeyi yazın
+  - / zalgofy: Bir iletiyi yanıtlamak için yanıtlayın!
+  - / runs: bir dizi yanıttan rastgele bir dize yanıtlamanızı sağlar.
+  - / insults: bir dizi yanıttan rastgele bir dize yanıtlamanızı sağlar.
+  - / slap: bir kullanıcıyı tokatla veya bir yanıt yoksa tokatlanır.
+#Misc
+modname_misc: Misc
+misc_get_id_1: The original sender, {}, has an ID of `{}`.\nThe forwarder, {}, has an ID of `{}`.
+misc_get_id_2: "{}'s id is `{}`."
+misc_id_1: Your id is `{}`.
+misc_id_2: This group's id is `{}`.
+misc_info_1: "<b>User info</b>:"
+misc_info_id: "\nID: <code>{}</code>"
+misc_info_first: "\nFirst Name: {}"
+misc_info_name: "\nLast Name: {}"
+misc_info_username: "\nUsername: @{}"
+misc_info_user_link: "\nUser link: {}\n"
+misc_info_is_owner: "\nThis person is my owner! They have total power over me."
+misc_info_is_original_owner: "\nThis person is my creator, beginning of me, though he abandoned my original, sister Marie, already :("
+misc_info_is_sudo: "\nThis person is one of my sudo users!"
+misc_info_is_support: "\nThis person is one of my support users!"
+misc_info_is_whitelisted: "\nThis person is one of my whitelisted user, one rarely gets this role, you can't ban or kick him."
+misc_gdpr: Deleting identifiable data...
+misc_md_list: |
+  Markdown is a very powerful formatting tool supported by telegram. tgbot Aya has some enhancements, to make sure that \
+  saved messages are correctly parsed, and to allow you to create buttons.
+  - <code>_italic_</code>: wrapping text with '_' will produce italic text
+  - <code>*bold*</code>: wrapping text with '*' will produce bold text
+  - <code>`code`</code>: wrapping text with '`' will produce monospaced text, also known as 'code'
+  - <code>[sometext](someURL)</code>: this will create a link - the message will just show <code>sometext</code>, \
+  and tapping on it will open the page at <code>someURL</code>.
+  EG: <code>[test](example.com)</code>
+  - <code>[buttontext](buttonurl:someURL)</code>: this is a special enhancement to allow users to have telegram \
+  buttons in their markdown. <code>buttontext</code> will be what is displayed on the button, and <code>someurl</code> \
+  will be the url which is opened.
+  EG: <code>[This is a button](buttonurl:example.com)</code>
+  If you want multiple buttons on the same line, use :same, as such:
+  <code>[one](buttonurl://example.com)
+  [two](buttonurl://google.com:same)</code>
+  This will create two buttons on a single line, instead of one button per line.
+misc_md_try: Try forwarding the following message to me, and you'll see!
+misc_md_help: "/save test This is a markdown test. _italics_, *bold*, `code`, [URL](example.com) [button](buttonurl:github.com) [button2](buttonurl://google.com:same)"
+misc_paste_invalid: What am I supposed to do with this?!
+misc_paste_404: Failed to reach dogbin
+misc_paste_success: "Shortened URL: {}/{}\nYou can view stats, etc. [here]({}/v/{})"
+misc_get_pasted_invalid: Please supply a dogbin url!
+misc_get_pasted_unknown: Unknown error occured
+misc_covid_error: An error have occured!, Are you sure the country name is correct?
+misc_covid_total_tests: "*Total Tests*: {}"
+misc_covid: |
+  *COVID-19 Statistics for {}*\n
+  *Confirmed Cases*: {} _(+{})_
+  *Active Cases*: {}
+  *Critical Cases*: {}
+  *Deaths*: {} _(+{})_
+  *Recovered*: {}
+  *Total tests*: {}
+misc_help: |
+ - / id: geçerli grup kimliğini al. Bir iletiyi yanıtlayarak kullanılırsa, kullanıcının kimliğini alır.
+  - / info: bir kullanıcı hakkında bilgi almanızı sağlar.
+  - / gdpr: bilgilerinizi botun veritabanından siler. Yalnızca özel sohbetler.
+  - / stickerid: dosya kimliğini söylemek için bana bir çıkartmayı yanıtla.
+  - / getsticker: Ham PNG dosyasını yüklemek için bana bir çıkartmayı yanıtla.
+  - / markdownhelp: işaretlemenin telgrafta nasıl çalıştığının hızlı özeti - yalnızca özel sohbetlerde çağrılabilir.
+  - / git: GitHub kullanıcısı veya kuruluşu hakkında bilgi verir.
+  - / repo: GitHub kullanıcı veya kuruluş veri havuzu listesini döndürür (40 ile sınırlıdır)
+  - / paste: [dogbin] kullanarak bir macun veya kısaltılmış bir URL oluşturun (https://del.dog)
+  - / getpaste: [dogbin] 'den bir macun veya kısaltılmış URL'nin içeriğini alın (https://del.dog)
+  - / pastestats: [dogbin] 'den bir macun veya kısaltılmış URL'nin istatistiklerini alın (https://del.dog)
+  - / ud: Aramak istediğiniz sözcüğü veya ifadeyi yazın. Örneğin / ud Gay
+  - / removebotkeyboard: Grubunuza takılan kötü bir bot klavyesi mi var?
+  - / exec <dil> <code> [/ stdin <stdin>]: Belirtilen bir dilde bir kod yürütün. Desteklenen dilleri almak için boş bir komut gönderin.
+  - / wiki <keywords>: Bu botu kullanarak wikipedia makaleleri alın! \ n
+  *Special | COVID-19*
+  - / covid: Sağlayan: Worldometers, Genel istatistikleri hakkında istatistikleri verir COVID-19.
+  - / covid <ülke adı>: Worldometers tarafından desteklenmektedir, COVID-19 ile ilgili istatistikler verir.
+#Purge
+modname_msg_deleting: Purges
+purge_msg_cant_del_too_old: Tüm mesajlar silinemez. İletiler çok eski olabilir, silme haklarına sahip olmayabilirim veya bu bir üst grup olmayabilir.
+purge_msg_success: Temizleme tamamlandı.
+purge_invalid: Boşaltma işleminin nereden başlayacağını seçmek için bir mesajı yanıtlayın.
+purge_invalid2: Neyi silmek istiyorsun?
+msg_deleting_help: |
+  Bu komutla mesajları silmek artık çok kolay. Bot mesajları tek tek veya tek tek temizler.
+
+  * Yalnızca yönetici: *
+   - / del: yanıtladığınız mesajı siler
+   - / purge: bu mesajla cevaplanan mesaj arasındaki tüm mesajları siler.
+   - / purge <integer X>: cevaplanan mesajı ve ardından gelen X mesajlarını siler.
+#Muting
+mute_invalid: "Susturmak için bana bir kullanıcı adı vermeniz veya sessize alınacak birine cevap vermeniz gerekecek."
+mute_not_myself: "Kendimi susturmuyorum!"
+mute_not_sudo: "Hayır! Bot sudo'ları susturmuyorum! Bu oldukça aptalca bir fikir olurdu."
+mute_not_m_admin: "Hayır! Sohbet yöneticisini yoksaymıyorum! Bu oldukça aptalca bir fikir olurdu."
+mute_success: "{}, {} içinde yok!"
+mute_already_mute: "Bu kullanıcının zaten {}!
+mute_not_in_chat: "Bu kullanıcı {}! 'da değil!"
+unmute_invalid: "Yoksaymak için bana bir kullanıcı adı vermeniz veya sesinin kapatılacağı birine cevap vermeniz gerekecek."
+unmute_not_muted: "Bu kullanıcının zaten {} dilinde konuşma hakkı var."
+unmute_success: "Evet, {} {}! 'da tekrar konuşmaya başlayabilir!"
+unmute_not_in_chat: "Bu kullanıcı sohbette bile değil, onları yoksaymak, zaten olduğundan daha fazla konuşmasına neden olmaz."
+unmute_is_an_admin: "Bir yöneticinin sesini açmak artık bir trend mi? Hayır, bu çok aptalca."
+mute_not_refer: "Bir kullanıcıya atıfta bulunmuyorsunuz."
+mute_not_existed: "Bu kullanıcıyı bulamıyorum"
+mute_is_admin: "Gerçekten yöneticileri sessize alabilsem ..."
+mute_is_bot: "Kendimi MUTE yapmayacağım, deli misin?"
+tmute_no_time: "Bu kullanıcıyı sessize almak için bir zaman belirtmediniz!"
+tmute_success: "{} içinde {} için sessize alındı!"
+mute_cant_mute: "Lanet olsun, o kullanıcıyı susturamıyorum."
+restrict_invalid: "Kısıtlamak için bana bir kullanıcı adı vermeniz veya kısıtlanacak birine cevap vermeniz gerekiyor."
+restrict_is_bot: "Kendimi kısıtlamıyorum!"
+restrict_is_admin: "Korkarım yöneticileri kısıtlayamıyorum!"
+restrict_success: "{}, {}! 'da medya göndermesi yasaklandı!"
+restrict_already_restricted: "Bu kullanıcı zaten {}!
+unrestrict_invalid: "Kısıtlamam için bana bir kullanıcı adı vermelisin veya kısıtlamaması için birine cevap vermelisin."
+unrestrict_not_restricted: "Bu kullanıcının zaten {} içinde herhangi bir şey gönderme hakkı var."
+unrestrict_success: "Evet, {} {}! 'da tekrar medya gönderebilir!"
+unrestrict_not_in_chat: "Bu kullanıcı sohbette bile değil, onları serbest bırakmak zaten yaptıklarından daha fazla bir şey göndermelerini sağlamaz!"
+nomedia_need_time: "Bu kullanıcıyı kısıtlamak için bir zaman belirtmediniz!"
+nomedia_success: "{} içinde {} için medya göndermesi kısıtlandı!"
+restrict_cant_restrict: "Bu kullanıcıyı kısıtlayamıyorum."
+muteme_muted: "Sorun değil, kapa çeneni!
+#Notes
+modname_notes: Notes
+note_not_existed: "Bu not mevcut değil!"
+note_lost: "Bu mesaj kaybolmuş gibi görünüyor - kaydedilen notlarınızdan kaldıracağım."
+note_msg_del: "Görünüşe göre bu notun orijinal göndereni mesajlarını silmiş - üzgünüm! Bunu önlemek için bir mesaj dökümü kullanın. Bu notu kaydedilmiş notlarınızdan kaldıracağım."
+note_url_invalid: "Düğmenin URL'si geçersiz! Lütfen bu notu güncelleyin!"
+note_mention_invalid: "Görünüşe göre daha önce hiç görmediğim birinden bahsetmeye çalıştın. Mesajlarından birini bana ilet, ben de onları etiketleyebiliyorum!"
+note_incorrect_import: "Bu not başka bir bottan yanlış içe aktarılmış bir dosyaydı - kullanamıyorum. Gerekirse manuel olarak kaydedin. Notlar listenizden kaldıracağım."
+note_cannot_send: "Bu not yanlış biçimlendirildiği için gönderilemedi, Lütfen nedenini anlayamıyorsanız @ tgbotAyaGroup'a sorun!"
+get_invalid: "Not adı eksik! Almak istediğiniz notun adını yazın."
+note_is_local: "yerel notlar"
+save_invalid: "Kaydedilecek bir şey yok!"
+save_success: "Tamam, * {} * içine` {} `not ekledi. \ n`` get {}` veya `# {}` ile alın "
+save_updated: "Tamam, * {} * içindeki` `}} notu güncellendi!. \ n` / get {} `veya` # {} `ile alın"
+clear_success: "Not * {} * 'dan başarıyla kaldırıldı."
+note_in_chat: "* {} içindeki notlar: * \ n"
+note_in_local: "* Yerel Notlar: * \ n"
+note_none_in_chat: "* {} *! 'da not yok"
+note_get: "\ nBu notları` / notename` veya `# notename` kullanarak alabilirsiniz. \ nBurada notename ile birlikte verilen # #, daha kolay olması için` # ` kopyala yapıştır."
+note_fail_to_import: "Bu dosyalar / fotoğraflar başka bir bottan kaynaklandığı için içe aktarılamadı. Bu bir telgraf API kısıtlamasıdır ve önlenemez. Sorun için özür dileriz!"
+notes_must_be_creator: "Bu sohbet yaratıcısı olmalısın."
+notes_cleanup_success: "{} bu sohbetten notlar kaldırıldı."
+notes_help: |
+  Notlar ile gelecekteki kullanıcılar için veri kaydedin!
+  Notlar rastgele bilgi toplama kaydetmek için harika; bir telefon numarası, güzel bir gif, komik bir resim - herhangi bir şey!
+
+  Kullanılabilir komutlar:
+   - / save <name> <content>: İçeriği "name" adlı bir nota kaydedin. Bir iletiyi yanıtladığınızda bu ileti kaydedilir. Medyada bile çalışıyor!
+   - / get <name>: "name" adında not alın.
+   - # <ad>: `/ get name` ile aynı
+   - / clear <name>: "ad" adlı notu siler
+   - / notes: Geçerli sohbetteki tüm notları listele
+   - / kaydedildi: / notes ile aynı
+   - / clearall: Grubunuzdaki tüm notları temizleyin, bunu yalnızca ne yaptığınızı biliyorsanız kullanın
+
+  Bir notun nasıl kaydedileceğine örnek olarak şunlar verilebilir:
+  / data kaydet Bu bazı verilerdir!
+  Şimdi, "/ get data" veya "#data" kullanan herkes "Bu bazı verilerdir!"
+  Bir görüntü, gif veya çıkartma veya başka bir veri kaydetmek istiyorsanız, aşağıdakileri yapın:
+  / bir etikete veya istediğiniz verileri yanıtlarken kelimeyi kaydedin. Şimdi, "#word" deki not cevap olarak gönderilecek bir çıkartma içeriyor.
+#Reporting
+modname_reporting: Raporlama
+report_pm_on: "Raporlama açıldı! Birisi bir şey raporladığında bildirim alırsınız."
+report_pm_off: "Raporlama kapatıldı! Rapor almayacaksınız."
+report_chat_on: "Raporlama açık! Raporları açmış olan yöneticilere / report veya @admin çağrıldığında bildirim gönderilecek."
+report_chat_off: "Raporlama kapatıldı! / raporda veya @admin'de hiçbir yönetici bilgilendirilmeyecek."
+report_pm_pref: "Mevcut rapor tercihiniz:` {} `"
+report_chat_pref: "Bu sohbetin geçerli ayarı: {{}"
+report_success: "{} mesajı yöneticilere bildirdi."
+report_pm_enable: "Öğleden sonra raporlarınız etkinleştirildi!"
+raporlar_pm_disable: "Saatinizde rapor devre dışı bırakıldı!"
+raporlama_help: |
+  - / report <neden>: yöneticilere bildirmek için bir iletiyi yanıtlayın.
+  - @admin: yöneticilere bildirmek için bir iletiyi yanıtlayın.
+  NOT: yöneticiler tarafından kullanılırsa bunların hiçbiri tetiklenmez
+
+  * Yalnızca yönetici: *
+  - / raporlar <açık / kapalı>: rapor ayarını değiştirmenizi veya geçerli durumu görüntülemenizi sağlar.
+    - Öğleden sonra yapılırsa, durumunuzu değiştirir.
+    - Sohbetteyse, sohbetin durumunu değiştirir.
+#Rules
+modname_rules: Rules
+rules_shortcut_not_setup_properly: "Bu sohbet için kurallar kısayolu doğru şekilde ayarlanmamış! Yöneticilerin bunu düzeltmesini isteyin."
+rules_display: "* {} * için kurallar şunlardır: \ n \ n {}"
+rules_not_found: "Grup yöneticileri bu sohbet için henüz bir kural belirlemedi. Muhtemelen yasa dışı olduğu anlamına gelmez ...!"
+rules_button_click: "Bu grubun kurallarını almak için aşağıdaki düğmeyi tıklayın."
+kurallar: "Kurallar"
+rules_success: "Bu grup için kurallar başarıyla ayarlandı."
+rules_help: |
+  "- / rules: bu sohbetin kurallarını al.
+
+  * Yalnızca yönetici: *
+   - / clearrules: bu sohbetin kurallarını temizleyin.
+   - / setrules <burada kurallarınız>: bu sohbet için kuralları ayarlayın. "
+#Translator
+modname_translator: Translator
+translator_translated: |
+  Source (`{}`):\n{}
+  Destination (`{}`):\n{}
+translator_err: Çeviri sırasında hata oluştu: \ n {}
+translator_help: "- / tr (dil kodu): Yanıtlanan iletinin çevirisini alın."
+translator_no_str: Çevrilecek bir mesajı yanıtlayın!
+translator_no_args: Yanıtlanan mesajı tercüme etmek istediğiniz dili belirtin!
+translator_animal_translated: |
+  Tercüme edilen hayvan {} başarıyla!
+  Hayvanınız şöyle diyor: \ n` {} `
+translator_animal_lang:
+  - Seni seviyorum
+  - Selam!
+  - Şerefe!
+  - Bana dokunma!
+  - Hey! Açım!
+  - Zzz ...
+  - Bu siyah dikdörtgen nedir?
+  - Dışarı çıkmak istiyorum!
+  - Hav! Hav! Bekle ... beni kaydediyor musun ?!
+  - Konuşmayacağım!
+  - Arkadaşlarım nerede?
+  - Banyoya ihtiyacım var.
+  - Beni yalnız bırak!
+  - Testislerim nerede?
+  - Bacağım acıyor!
+  - Çýkar beni, ţimdi!
+  - Neden beni taciz ediyorsun ??!
+  - Siktir git.
+  - Seni yiyeceğim!
+  - Paketi ara! Potansiyel bir sorun var! Birisi bölgemize geliyor!
+  - Orda kimse var mı? Yalnızım ve arkadaşlığa ihtiyacım var.
+  - Kes şunu!
+  - Selam!
+  - Bu nedir?
+  - Ha?
+  - Ah!
+  - Hadi oynayalım!
+  - Bu eğlenceli!
+  - Senden gerçekten korkuyorum.
+  - İşeyeceğim!
+  - kokuyorsun.
+#URL Blacklist
+modname_urlblacklist: Domain Blacklists
+url_blacklist_success: "Kara listeye <code> {} </code> alan adı eklendi!"
+url_blacklist_invalid: "Geçersiz bir URL'yi kara listeye almaya çalışıyorsunuz"
+url_blacklist_success_2: Kara listeye <code> {} </code> alan adları eklendi.
+url_blacklist_invalid_2: "Bana kara listeye hangi url'leri eklemek istediğinizi söyleyin."
+url_blacklist_remove_success: "Kara listeden <code> {} </code> çıkarıldı!"
+url_blacklist_remove_success_2: "Kara listeden <code> {} </code> alan adları kaldırıldı."
+url_blacklist_remove_invalid: "Bu, kara listeye alınmış bir alan adı değil ...!"
+url_blacklist_remove_invalid_2: "Bu alan adlarının hiçbiri mevcut değil, bu yüzden kaldırılmadı."
+url_blacklist_remove_success_3: "Kara listeden <code> {} </code> alan adları kaldırıldı. {} mevcut değil, bu yüzden kaldırılmadı."
+url_blacklist_remove_invalid_3: "Bana kara listeden kaldırmak istediğiniz alanları söyleyin."
+url_blacklist_current: "Geçerli <b> kara listeye alındı ​​</b> alanları: \ n"
+url_blacklist_no_existed: "Burada kara listeye alınmış alan adı yok!"
+#Greetings
+modname_welcome: Greetings
+welcome_added_to_grp: Beni grubunuza eklediğiniz için teşekkürler! Haber kanalımıza göz atmayı unutmayın!
+welcome_mute_btn_unmuted: Sesi açıldı! Şimdi yazabilirsiniz!
+welcome_mute_btn_old_user: Yeni bir kullanıcı değilsin!
+welcome_bot_owner_left: Efendim, gitti, Parti bitti!
+welcome_mute_bot_cant_mute: Burada insanları sınırlayamıyorum! Birisinin sesini kapatabilmem için yönetici olduğumdan emin ol!
+welcome_mute_enabled: Karşılama etkinleştirildi! Yeni üyeler düğmeyi tıklayana kadar sesi kapatılacak!
+welcome_mute_disabled: Karşılama devre dışı! Yeni üyelerin sesi kapatılmayacak!
+welcome_mute_curr_settings: "Geçerli ayarlar: \ n \ nHoşgeldiniz güvenliği:` {} `\ nÜye sesi kapatılacak:` {} `\ nSessiz düğme için özel metin:` {} `"
+welcome_mute_time_none: Her yeni üye, karşılama düğmesine basana kadar sesi kapatılacaktır!
+welcome_mute_time: Her yeni üye {} için veya karşılama düğmesine basana kadar susturulur!
+welcome_mute_time_settings_none: Şu anda her yeni üye karşılama düğmesine basana kadar sesi kapatılacak.
+welcome_mute_time_settings: Şu anda her yeni üye {} için veya karşılama düğmesine basana kadar susturulacak.
+welcome_mute_btn_text_changed: "Güvenlik düğmesinin metni şu şekilde değiştirildi: {{}` "
+welcome_mute_btn_curr_text: "Geçerli güvenlik düğmesi metni:` {} `"
+welcome_mute_btn_default_text: İnsan olduğunuzu kanıtlamak için burayı tıklayın!
+welcome_mute_btn_text_reset: "Güvenlik düğmesinin metni şu şekilde sıfırlandı:` {} `"
+welcome_clean_service_off: Servis mesajlarını bırakacağım.
+welcome_clean_service_on: Servis mesajlarını temizleyeceğim.
+welcome_mute_time_short_none: (Kullanıcı düğmeyi tıklayana kadar sonsuza kadar sessize alınır)
+welcome_mute_time_short: ({} için kullanıcının sesini kapatma)
+welcome_greet_set_on: Yeni üyeler şimdi sıcak bir karşılama mesajı ile karşılanacak!
+welcome_greet_set_off: Yeni üyeler artık hoş geldiniz mesajı ile karşılanmayacak!
+welcome_goodbye_set_on: Ayrılan üyelere bir veda mesajı verilecek!
+welcome_goodbye_set_off: Üyelikten ayrılmaya artık elveda mesajı verilmeyecek!
+welcome_set_welcome_no_text: Karşılama mesajını vermelisiniz! Selamlar modülü için bazı yardımlar için PM'ye `/ yardım selamları 'yazın!
+welcome_set_welcome_no_datatype: Karşılama mesajının veri türü bulunamadı.
+welcome_set_welcome_success: Özel karşılama iletisini başarıyla ayarlayın!
+welcome_reset_welcome_success: Karşılama mesajını başarıyla varsayılana sıfırlayın!
+welcome_set_goodbye_success: Özel veda mesajını başarıyla ayarla!
+welcome_reset_goodbye_success: Güle güle mesajını varsayılana başarıyla sıfırla!
+welcome_clean_curr_on: Şu anda 2 güne kadar olan karşılama iletilerini siliyorum!
+welcome_clean_curr_off: Şu anda eski karşılama iletilerini silmiyorum!
+welcome_clean_set_on: Bundan böyle eski (2 güne kadar) karşılama mesajlarını sileceğim!
+welcome_clean_set_off: Artık eski karşılama mesajlarını silmeyeceğim!
+welcome_chat_settings_pref: |
+  Bu sohbetin hoş geldiniz ayarları `{}` olarak ayarlandı.
+  Güle güle ayarları `{}` olarak ayarlandı.
+welcome_goodbye_settings: |
+  Bu sohbetin veda ayarı ``}} olarak ayarlandı.
+  * Güle güle mesajı ({{}} doldurulmuyor): *
+welcome_settings: |
+  Bu sohbette karşılama ayarı şu şekilde ayarlandı: `{}`
+  Eski karşılama mesajını silme: `{}`
+  Servis mesajını silme: `{}`
+  Kullanıcılara katıldıklarında sesi kapatma: `{}`
+  Sessiz düğmesi metni: `{}`
+  \ n * Karşılama mesajı ({{}} doldurulmuyor): *
+welcome_help: |
+  Selamlama modülü ile üyelerinize sıcak bir karşılama verin! Ya da hüzünlü bir veda ... Bağımlı!
+
+  Kullanılabilir komutlar:
+  - / welcome <açık / kapalı / evet / hayır>: karşılama mesajlarını etkinleştirir / devre dışı bırakır. Hiçbir seçenek belirtilmezse, geçerli karşılama mesajını ve ayarlarını döndürür.
+  - / güle güle <açık / kapalı / evet / hayır>: güle güle mesajlarını etkinleştirir / devre dışı bırakır. Hiçbir seçenek belirtilmezse, geçerli veda mesajını ve ayarlarını döndürür.
+  - / setwelcome <message>: yeni karşılama mesajınızı ayarlar! İşaretleme ve düğmelerin yanı sıra dolgular da desteklenir.
+  - / resetwelcome: karşılama iletinizi varsayılana sıfırlar; yaptığınız değişiklikleri silme.
+  - / setgoodbye <message>: yeni veda mesajınızı ayarlar! İşaretleme ve düğmelerin yanı sıra dolgular da desteklenir.
+  - / resetgoodbye: hoşçakal mesajınızı varsayılana sıfırlar; yaptığınız değişiklikleri silme.
+  - / cleanservice <açık / kapalı / evet / hayır>: tüm servis mesajlarını siler; insanlar katıldığında gördüğünüz "x gruba katıldı".
+  - / cleanwelcome <açık / kapalı / evet / hayır>: eski karşılama iletilerini siler; yeni bir kişi katıldığında eski mesaj silinir.
+  - / welcomemute <açık / kapalı / evet / hayır>: katılan tüm kullanıcılar sessizleşir; kendilerini açmalarını sağlamak için karşılama mesajına bir düğme eklenir. Bu onların bir bot olmadığını kanıtlıyor!
+  - / welcomemutetime <Xw / d / h / m>: bir kullanıcı bu süreden sonra karşılama iletisindeki "sessiz" düğmesine basmazsa, bu süreden sonra otomatik olarak sesi açılır.
+  Not: Sessiz bir süre istemiyorsanız (düğmeyi basana kadar kullanıcıyı sessize alın) 
+  - / welcomemutetime 0m kullanın.
+  - / setmutetext <new text>: Karşılama sonuçlarını etkinleştirerek elde edilen "insan olduğunuzu kanıtlamak için burayı tıklayın" düğmesini özelleştirin.
+  - / resetmutetext: sessiz düğmesini varsayılan metne sıfırlar.
+
+  Metninizi biçimlendirme ve katılma sırasında yeni kullanıcılardan bahsetme hakkında bilgi edinmek için okuma / işaretleme yardımı!
+  dolgu:
+  Belirtildiği gibi, hoş geldiniz iletinizi kullanıcı veya sohbet bilgileriyle doldurmak için belirli etiketleri kullanabilirsiniz; var:
+  {first}: Kullanıcının adı.
+  {last}: Kullanıcının soyadı.
+  {fullname}: Kullanıcının tam adı.
+  {username}: Kullanıcının kullanıcı adı; hiçbiri yoksa kullanıcıdan bahseder.
+  {mention}: Kullanıcıya adlarını kullanarak bahseder.
+  {id}: Kullanıcının kimliği.
+  {chatname}: Sohbetin adı.
+
+  Dolguların nasıl kullanılacağına bir örnek, aşağıdakileri kullanarak karşılama mesajınızı ayarlamak olabilir:
+  / setwelcome Merhaba {ilk}! {Chatname} sitesine hoş geldiniz.
+
+  Karşılama mesajlarını aşağıdaki gibi etkinleştirebilir / devre dışı bırakabilirsiniz:
+  / welcome 
+
+  Bir görüntü, gif veya çıkartma veya başka bir veri kaydetmek istiyorsanız, aşağıdakileri yapın:
+  / setwelcome bir etikete veya istediğiniz verilere yanıt verirken. Bu veriler şimdi yeni kullanıcıları ağırlamak için gönderilecek.
+
+  İpucu: biçimlendirilmemiş karşılama iletisini almak için / welcome noformat kullanın.
+  Bu, hoş geldiniz iletisini alır ve biçimlendirmeden gönderir; ham düzenlemeyi size kolay düzenlemeler yapmanıza olanak tanır.
+  Bu / goodbye ile de çalışır.
+#Users
+users_seen: "Onları toplam <code> {} </code> sohbetinde gördüm."
+users_seen_is_bot: "Onları gördüm ... Vay canına. Beni takip ediyorlar mı? Onlar aynı yerdeyim ... oh. Benim."
+#Userinfo
+modname_userinfo: Bios/Abouts
+userinfo_about_not_set_they: "{} henüz kendileri hakkında bir bilgi mesajı koymadı!"
+userinfo_about_not_set_you: Henüz kendiniz hakkında bir bilgi mesajı belirlemediniz!
+userinfo_about_set_success: Bilgilerinizi güncelleyin!
+userinfo_about_too_long: Bilgilerinizin {} karakterden az olması gerekiyor! Var {}.
+userinfo_bio_none_they: "{} herhangi bir biyolojik gruba sahip değil."
+userinfo_bio_none_you: Kimse senin için biyoloji koymadı!
+userinfo_bio_you_cant_set: Ha, kendi biyografini kuramazsın! Burada başkalarının merhametindesiniz ...
+userinfo_bio_bot_sudo_only: Eee ... evet, sadece sudo kullanıcılarına biyografimi ayarlamalarına güveniyorum.
+userinfo_bio_sudo_sudo_only: Eee ... evet, sadece sudo kullanıcılarına sudo kullanıcılarını ayarlamak için güveniyorum.
+userinfo_bio_owner_nobio: Efendimin biyografisini ayarlamıyorsun!
+userinfo_bio_too_long: Bir biyografinin {} karakterlerin altında olması gerekiyor! {} Ayarlamayı denediniz.
+userinfo_bio_set_no_reply: Biyografisini ayarlamak için birinin mesajını yanıtlayın!
+userinfo_message_about_bio: <b> Kullanıcı hakkında: </b> \ n {} \ n <b> Başkalarının söyledikleri: </b> \ n {}
+userinfo_message_bio: <b> Başkaları ne diyor: </b> \ n {bio} \ n
+userinfo_message_about: <b> Kullanıcı hakkında: </b> \ n {}
+userinfo_what_i_and_other_say: <b> Kullanıcı hakkında: </b> \ n {} \ n <b> Başkalarının söyledikleri: </b> \ n {}
+userinfo_what_other_say: <b> Diğerleri ne diyor: </b> \ n {} \ n
+userinfo_what_i_say: <b> Kullanıcı hakkında: </b> \ n {}
+userinfo_help: |
+  - / setbio <text>: yanıt verirken başka bir kullanıcının biyografisini kurtaracak
+  - / bio: sizin veya başka bir kullanıcının biyografisini alır. Bu kendiniz ayarlayamaz.
+  - / setme <text>: bilgilerinizi ayarlayacaktır
+  - / me: sizin veya başka bir kullanıcının bilgilerini alır
+#Stickers
+modname_stickers: Stickers
+stickers_stickerid: Etiket Kimliği: \ n``` {} `` `
+stickers_stickerid_no_reply: Kimliğini almak için lütfen bir çıkartmayı yanıtlayın.
+stickers_getsticker_no_reply: Lütfen PNG'sini yüklemem için bir çıkartmaya yanıt verin.
+stickers_kang_error: Evet, bunu söyleyemem.
+stickers_kang_success: |
+  Çıkartma [pakete] başarıyla eklendi (t.me/addstickers/ {}).
+  Emoji: {}
+stickers_kang_only_img: Sadece görüntüleri kangallayabilirim!
+stickers_kang_invalid_emoji: "Hata: Geçersiz emoji (ler)."
+stickers_kang_too_much: "Hata: Maksimum paket boyutuna ulaşıldı. Uygun ödeme yapmak için F tuşuna basın."
+stickers_kang_no_reply: Lütfen bir çıkartmaya veya görüntüye cevap verin! \ nOh, bu arada. İşte paketleriniz: \ n
+stickers_pack_name_exists: Paketiniz [burada] bulunabilir (t.me/addstickers/%s)
+stickers_pack_contact_pm: Önce benimle iletişime geçin.
+stickers_pack_create_error: Etiket paketi oluşturulamadı. Muhtemelen blek mejik nedeniyle.
+stickers_help: |
+  - / stickerid: dosya kimliğini söylemek için bana bir çıkartmayı yanıtla.
+  - / getsticker: Ham PNG dosyasını yüklemek için bana bir çıkartmayı yanıtla.
+  - / kang: paketinize eklemek için bir çıkartmayı yanıtlayın.
+#Warnings
+modname_warns: Warnings
+warns_warn_admin_no_warn: Bir yöneticiyi uyarmayacağım!
+warns_warn_admin_autofilter: Otomatik uyarı filtresi
+warns_max_warn_kick: "{} uyarılar, {} başladı!"
+warns_max_warn_ban: "{} uyarılar, {} yasaklandı!"
+warns_warn_ban_log_channel: |
+  <b>{}:</b>
+  #WARN_BAN
+  <b>Admin:</b> {}
+  <b>User:</b> {} (<code>{}</code>)
+  <b>Reason:</b> {}
+  <b>Warn Count:</b> <code>{}/{}</code>
+warns_warn_log_channel: |
+  <b>{}:</b>
+  #WARN
+  <b>Admin:</b> {}
+  <b>User:</b> {} (<code>{}</code>)
+  <b>Reason:</b> {}
+  <b>Counts:</b> <code>{}/{}</code>
+warns_remove_log_channel: |
+  <b>{}:</b>
+  #UNWARN
+  <b>Admin:</b> {}
+  <b>User:</b> {} (<code>{}</code>)
+warns_reset_log_channel: |
+  <b>{}:</b>
+  #RESETWARNS
+  <b>Admin:</b> {}
+  <b>User:</b> {} (<code>{}</code>)
+warns_set_warn_limit_log_channel: |
+  <b>{}:</b>
+  #SET_WARN_LIMIT
+  <b>Admin:</b> {}
+  Set the warn limit to <code>{}</code>
+warns_strength_on_log_channel: |
+  <b>{}:</b>\n
+  <b>Admin:</b> {}\n
+  Has enabled strong warns. Users will be banned.
+warns_strength_off_log_channel: |
+  <b>{}:</b>\n
+  <b>Admin:</b> {}\n
+  Güçlü uyarılar devre dışı bıraktı. Kullanıcılar sadece tekmelenecek.
+warns_btn_remove_warn: Uyarıyı kaldır
+warns_btn_rules: Kurallar
+warns_user_warned: "{} <b> uyarıldı! </b> \ n {} / {} uyarıları var."
+warns_latest_warn_reason: \ nEn son uyarı şuydu: \ n <code> {} </code>
+warns_remove_admin_only: Bu uyarıyı kaldırma izniniz yok! Yalnızca yöneticiler uyarıları kaldırabilir.
+warns_remove_success: Uyarı {} tarafından kaldırıldı.
+warns_user_has_no_warns: Kullanıcının herhangi bir uyarısı yok!
+warns_latest_remove_success: En son uyarı kaldırıldı!
+warns_reset_success: Uyarılar sıfırlandı!
+warns_list_warns: "Bu kullanıcının aşağıdaki nedenlerle {} / {} uyarısı var:"
+warns_list_warns_no_reason: Bu kullanıcının {} / {} uyarısı var, ancak bunların hiçbir nedeni yok.
+warns_list_warns_none: Bu kullanıcının hiç uyarısı yok!
+warns_handler_add_success: '{}' için uyarı işleyicisi eklendi!
+warns_filters_list_empty: Burada aktif uyarı filtresi yok!
+warns_filters_remove_success: Evet, insanları bunun için uyarmayı bırakacağım.
+warns_filter_doesnt_exist: Bu geçerli bir uyarı filtresi değil - tüm aktif uyarı filtreleri için çalıştırma / uyarı listesi.
+warns_filters_list: <b> Bu sohbetteki geçerli uyarı filtreleri: </b> \ n
+warns_warnlimit_min_1: Minimum uyarı limiti 1!
+warns_warnlimit_updated_success: Uyarı sınırını {} olarak güncellendi.
+warns_warnlimit_invalid_arg: Geçersiz argüman! Argüman 1'den az olmamak üzere bir sayı olmalıdır.
+warns_warnlimit_current: Geçerli uyarı limiti {}.
+warns_strength_on_success: Uyarı sınırını aşmak artık kullanıcıyı yasaklayacak!
+warns_strength_off_success: Uyarı sınırını aşmak artık kullanıcıyı başlatacak! Kullanıcılar tekmelendikten sonra katılabilir.
+warns_strength_invalid_arg: Geçersiz argüman! Sadece açık / evet / hayır / kapalı kabul edilir!
+warns_strength_off: Uyarıları şu anda kullanıcıları sınırları aştıklarında * tekme * olarak ayarlamışlar.
+warns_strength_on: Uyarıları şu anda kullanıcıları sınırları aştıklarında * yasaklama * olarak ayarlı.
+warns_help: |
+- / warn <userhandle>: kontrol edin (ve varsa nedenlerine bakın).
+  - / warnlist: mevcut tüm uyarı filtrelerinin listesi
+
+  * Yalnızca yönetici: *
+  - / warn <userhandle>: ayarları uyar. 3 uyarıdan sonra, kullanıcı gruptan erkekler içindir.
+  - / resetwarn <userhandle>: bir odada uyarılarını sıfırlar.
+  - / addwarn <keyword> <yanıt iletisi>: belirli bir anahtar kelimeye bir uyarı filtresi geçerlidir.
+  - / nowarn <keyword>: uyarı filtresini durdurur.
+  - / warnlimit <num>: uyarı limitini belirle
+  - / strongwarn <açık / evet / kapalı / hayır>: Açık olarak ayarlanabilirsa uyarı sınırını aşmak banla sonuçlanır. yada, sadece gruptan atar.
+  - / rmwarn <userhandle>: bir kullanıcı için en son uyarıyı kaldırır.
+  - / unwarn <userhandle>: / rmwarn ile aynı
+### Helper functions
+#chat_status
+helpers_bot_cant_delete: Buradaki mesajları silemiyorum! Yönetici olduğumdan ve diğer kullanıcıların mesajlarını silebildiğimden emin olun.
+helpers_bot_cant_pin: Mesajları buraya sabitleyemiyorum! Yönetici olduğumdan ve iletileri sabitleyebildiğimden emin olun.
+helpers_bot_cant_pro_demote: Burada insanları tanıtamıyorum / indiremiyorum! Yönetici olduğumdan ve yeni yöneticiler atayabildiğimden emin olun.
+helpers_bot_cant_restrict: Burada insanları kısıtlayamıyorum! Yönetici olduğumdan ve yeni yöneticiler atayabildiğimden emin olun.
+helpers_bot_not_admin: Yönetici değilim!
+helpers_user_not_admin: Bu işlemi gerçekleştirmek için bu sohbet yöneticisi olmalısınız!
+#extraction
+helpers_user_not_in_db: |
+  Kullanıcı veritabanımda bu kullanıcı yok.
+  Bunun yerine o kişinin mesajını yanıtlarsanız veya mesajlarından birini iletirseniz onlarla etkileşim kurabilirsiniz (bu yalnızca kullanıcının hesabı gizli değilse çalışır).
+#string_handling
+helpers_string_handling_invalid_time_amount: Invalid time amount specified.
+helpers_string_handling_invalid_time_type: "Invalid time type specified. Expected m, h, d, got: {}."
